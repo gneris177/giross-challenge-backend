@@ -9,24 +9,21 @@ import {
 
 export class CreateUserDto {
   @IsString()
+
   @IsNotEmpty({ message: 'O campo nome não pode ficar vazio' })
   name: string;
 
-  @IsEmail()
-  @IsNotEmpty({ message: 'O campo email não pode ficar vazio' })
+  @IsEmail({}, { message: 'Email inválido' })
   email: string;
 
   @IsString()
   @IsNotEmpty({ message: 'O campo gễnero não pode ficar vazio' })
   gender: string;
 
-  @IsPhoneNumber()
+  @IsPhoneNumber("BR", { message: 'Telefone inválido' })
   @IsNotEmpty({ message: 'O campo telefone não pode ficar vazio' })
   phone: string;
 
   @IsString()
-  address: string;
-
-  @IsBoolean()
-  isActive: boolean;
+  address: string;jx ggd
 }
