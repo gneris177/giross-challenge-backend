@@ -13,3 +13,12 @@ export const typeorm = TypeOrmModule.forRoot({
   entities: [__dirname + '/../**/*.entity.js'],
   synchronize: true,
 });
+
+/*
+ variables test default
+  host: localhost,
+  port: 3306,
+  username: root,
+  password: ,
+  database: challenge,
+ */
