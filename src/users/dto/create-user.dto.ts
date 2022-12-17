@@ -25,5 +25,5 @@ export class CreateUserDto {
   phone: string;
 
   @IsString()
-  address: string;jx ggd
+  address: string;
 }
